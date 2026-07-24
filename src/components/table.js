@@ -11,8 +11,6 @@ export function initTable(settings, onAction) {
     const {tableTemplate, rowTemplate, before, after} = settings;
     const root = cloneTemplate(tableTemplate);
 
-    // @todo: #1.2 —  вывести дополнительные шаблоны до и после таблицы
-// @todo: #1.2 — вывести дополнительные шаблоны до и после таблицы (массивы before и after)
 
 // Обрабатываем массив before (в обратном порядке для корректного prepend)
 if (Array.isArray(before)) {
