@@ -86,9 +86,10 @@ appRoot.appendChild(sampleTable.container);
 async function init(){
     const indexes = await api.getIndexes();
     
-    updateIndexes(sampleTable.filter.elements, {
+  updateIndexes(sampleTable.filter.elements, {
         searchBySeller: indexes.sellers
     });
+   
 }
 
 init().then(render);
